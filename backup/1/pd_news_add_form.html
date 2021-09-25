@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Добавить новость</title>
+	<link rel="stylesheet" type="text/css" href="css/formstyle.css">
+	<meta http-equiv="Content-type" content="text/html;charset=utf-8"/>
+</head>
+<body>
+
+    <form action="pd_news_add.php" method="post" enctype="multipart/form-data">
+    
+    <div>
+        <input type="text" name="title" class="text" placeholder="Написать заголовок">
+    </div>
+
+    <div>
+    	<textarea name="textarea" placeholder="Написать новость" cols="30" rows="5" class="textarea"></textarea>
+    		<!-- <input type="text" class="textinput" placeholder="Написать новость" > -->
+    </div>
+    <div>
+        <select name="select_block" class="text" id="select_block">
+        <option value="Наш город">Наш город</option>
+        <option value="Транспорт">Транспорт</option>
+        <option value="Общество">Общество</option>
+        <option value="Культура">Культура</option>
+        <option value="Происшествия">Происшествия</option>
+        </select>
+    </div>
+
+
+
+    <div class="photo">
+        <p>Загрузка фото</p>
+        <input type="file" name="photo" id="photo">
+
+    </div>
+    
+    
+    <br>
+    <div>
+    <button type="submit" class="textbutton">Отправить</button>
+    <button type="reset" class="textbutton">Очистить</button>
+
+    </div>
+    </form>
+</body>
+</html>

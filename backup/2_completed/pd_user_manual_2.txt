@@ -1,0 +1,71 @@
+	===ДОБАВИТЬ ПОЛЬЗОВАТЕЛЯ===
+http://ivanuzz.pushkeen.ru/pd_core/pd_user.php?login=...&password=...
+Пример:
+http://ivanuzz.pushkeen.ru/pd_core/pd_user.php?login=ivanuzz&password=qwerty
+
+Если пользователь существует - вернет его id
+Если нет, то содастся новый и выведется информация о нём
+
+....
+пусть всегда выводит это
+{"favorite_news":"","id":"7","likes":"","login":"ivanuzz","nickname":"","password":"qwerty3"}
+....
+
+	===ДОБАВИТЬ ИЗБРАННУЮ НОВОСТЬ===
+http://ivanuzz.pushkeen.ru/pd_core/pd_user_featured_news.php?login=...&password=...&id=...&status=add
+Пример:
+http://ivanuzz.pushkeen.ru/pd_core/pd_user_featured_news.php?login=ivanuzz&password=qwerty&id=309&status=add
+
+Вернет 0 в случае успеха (новость добавлена в избранные)
+Вернет 1 в случае неудачи (новость уже в избранном)
+
+....
+пусть всегда выводит это
+{"code":"0"}-успех
+{"code":"1"}-неуспех
+....
+
+	===УДАЛИТЬ ИЗ ИЗБРАННЫХ===
+http://ivanuzz.pushkeen.ru/pd_core/pd_user_featured_news.php?login=...&password=...&id=...&status=delete
+Пример:
+http://ivanuzz.pushkeen.ru/pd_core/pd_user_featured_news.php?login=ivanuzz&password=qwerty&id=309&status=delete
+
+Вернет 0 в случае успеха (новость удалена из избранных)
+Вернет 1 в случае неудачи (новости нет в избранном, поэтому удалять нечего)
+
+....
+пусть всегда выводит это
+{"code":"0"}-успех
+{"code":"1"}-неуспех
+....
+	
+	===СПИСОК ИЗБРАННЫХ НОВОСТЕЙ===
+http://ivanuzz.pushkeen.ru/pd_core/pd_user_featured_list.php?login=...&password=...
+Пример:
+http://ivanuzz.pushkeen.ru/pd_core/pd_user_featured_list.php?login=ivanuzz&password=qwerty
+
+Вернет "...,..."0 ("" , если пока нет избранных)
+Вернет 1 (если не был обнаружен пользователь, т.е. неправильный логин или пароль)
+....
+пусть всегда выводит это
+{"code":"0","result":[1,2,10]}-успех
+{"code":"1","result":[]}-неуспех
+....
+
+	==ЛАЙК НОВОСТИ===
+....
+пусть всегда выводит это
+{"code":"succsess"}-успех
+{"code":"failed"}-неуспех
+{"code":"replaced"}-успех в случае если у нас был дизлайк и мы поставили лайк
+{"code":"deleted"}-был лайк и мы его убрали
+....
+
+	==ДИЗЛАЙК НОВОСТИ===
+....
+пусть всегда выводит это
+{"code":"succsess"}-успех
+{"code":"failed"}-неуспех
+{"code":"replaced"}-успех в случае если у нас был лайк и мы поставили дизлайк
+{"code":"deleted"}-был дизлайк и мы его убрали
+....

@@ -1,0 +1,14 @@
+	===ПОСТАВИТЬ ЛАЙК===
+http://ivanuzz.pushkeen.ru/pd_core/pd_news_like.php?user_id=...&news_id=...
+Пример:
+http://ivanuzz.pushkeen.ru/pd_core/pd_news_like.php?user_id=5&news_id=1
+
+Если новость не найдена - вернет 2
+Если лайк поставлен - вернет 0  + то уберется дизлайк (если есть)
+Если лайк уже стоит - вернет 1 и уберет запись о лайке из базы
+
+	===ПОСТАВИТЬ ДИЗЛАЙК===
+Алгоритм обратный лайку. Меняется только название скрипта. Возвращает всё то же.
+http://ivanuzz.pushkeen.ru/pd_core/pd_news_dislike.php?user_id=...&news_id=...
+Пример:
+http://ivanuzz.pushkeen.ru/pd_core/pd_news_dislike.php?user_id=5&news_id=1

@@ -1,0 +1,19 @@
+	===ДОБАВИТЬ НОВОСТЬ===
+http://ivanuzz.pushkeen.ru/pd_core/pd_news_add_form.html
+(Рассчет, что загружаться будет только ОДИН файл)
+
+	===УДАЛИТЬ НОВОСТЬ===
+http://ivanuzz.pushkeen.ru/pd_core/pd_news_delete_form.php
+
+	===СПИСОК НОВОСТЕЙ===
+http://ivanuzz.pushkeen.ru/pd_core/pd_news_list.php
+
+
+	===ДОБАВИТЬ ИСТОРИЮ===
+http://ivanuzz.pushkeen.ru/pd_core/pd_story_add_form.html
+
+	===УДАЛИТЬ ИСТОРИЮ===
+http://ivanuzz.pushkeen.ru/pd_core/pd_story_delete_form.php
+
+	===СПИСОК ИСТОРИЙ===
+http://ivanuzz.pushkeen.ru/pd_core/pd_story_list.php

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Добавить историю</title>
+	<link rel="stylesheet" type="text/css" href="css/formstyle.css">
+	<meta http-equiv="Content-type" content="text/html;charset=utf-8"/>
+</head>
+<body>
+
+    <form action="pd_story_add.php" method="post" enctype="multipart/form-data">
+    <!-- "saves.php" -->
+    
+
+    <div class="photo">
+        <p>Загрузка фото</p>
+        <!-- <input type="file" name="photo" id="photo" multiple accept="image/*,image/jpeg"> -->
+           <input type="file" name="photo[]" required multiple>
+      
+
+    </div>
+    
+    
+    <br>
+    <div>
+    <button type="submit" class="textbutton">Отправить</button>
+    <button type="reset" class="textbutton">Очистить</button>
+
+    </div>
+    </form>
+</body>
+</html>
